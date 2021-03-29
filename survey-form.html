@@ -1,0 +1,174 @@
+<link rel="stylesheet" href="survey-form.css">
+<html>
+<div class="main">
+<div class="contain">
+<header class="header">
+<h1 id="title">
+Valorant Survey Form
+  </h1>
+<p id="description">
+  Thanks for taking the time to help us improve Valorant</p>
+  </header>
+
+<form id=survey-form>
+<div class="form-group">
+  <label id="name-label" for="name">Name</label>
+<input type="text"
+name="name"
+id="name"
+class="form-control"
+placeholder="Enter your name"
+required/>
+  </div>
+<div class="form-group">
+<label id="email-label" for="email">Email</label>
+<input type="email"
+name="email"
+id="email"
+class="form-control"
+placeholder="Enter your Email"
+required/>
+  </div>
+<div class="form-group">
+  <label id="number-label" for="number">Age<span class="extra"> (Optional)</span></label>
+<input type="number"
+name="age"
+id="number"
+class="form-control"
+min="10"
+       max="99"
+placeholder="Enter your age"/>
+  </div>
+<div class="form-group">
+  <p>What is your current rank in Valorant?</p>
+<select id="dropdown"
+name="rank"
+class="form-control" 
+required>
+  <option selected disabled value>Select Rank</option>
+  <option value="iron">Iron</option>
+  <option value="bronze">Bronze</option>
+  <option value="silver">Silver</option>
+<option value="gold">Gold</option>
+  <option value="platinum">Platinum</option>
+  <option value="diamond">Diamond</option>
+  <option value="immortal">Immortal</option>
+  <option value="radiant">Radiant</option>
+  </select>
+  </div>
+<div class="form-group">
+  <p> Would your recommend valorant to a friend?</p>
+<div class="radio">
+<label>
+<input
+name="recommendation"
+class="input-radio"
+type="radio"
+value="definitely"
+       checked/>Definitely</label>
+<label>
+<input 
+name="recommendation"
+value="not-sure"
+type="radio"
+class="input-radio"
+       />Not sure</label>
+<label>
+<input name="recommendation"
+value="never"
+class="input-radio"
+type="radio"
+       />Never</label>
+  </div>
+  </div>
+<div class="form-group">
+  <p>What is your favourite agent in valorant?</p>
+<select id="favourite"
+name="favourite" class="form-control" required>
+  <option disabled selected value>Select an agent</option> 
+<option value="jett">Jett</option>
+<option value="omen">Omen</option>
+<option value="breach">Breach</option>
+<option value="raze">Raze</option>
+<option value="killjoy">Killjoy</option>
+<option value="sova">Sova</option>
+<option value="yoru">Yoru</option>
+<option value="cypher">Cypher</option>
+<option value="astra">Astra</option>
+<option value="viper">Viper</option>
+<option value="pheonix">Pheonix</option>
+<option value="reyna">Reyna</option>
+<option value="sage">Sage</option>
+<option value="brimestone">Brimestone</option>
+<option value="skye">Skye</option>
+</select>
+<div class="form-group">
+  <p>What would you like to see changed? <span class="extra">(Check all that apply)</span></p>
+<div class="check">
+<label>
+<input type="checkbox"
+name="change"
+value="more-maps"
+class="input-checkbox"/>
+  Add more maps</label>
+<label>
+<input type="checkbox"
+name="change"
+value="more-agents"
+class="input-checkbox"
+       />Add more agents</label>
+<label>
+  <input type="checkbox"
+name="change"
+value="remove-duel"
+class="input-checkbox"
+         />Remove a duelist</label>
+<label>
+  <input type="checkbox"
+name="change"
+value="remove-icebox"
+class="input-checkbox"
+         />Remove Icebox</label>
+<label>
+  <input type="checkbox"
+name="change"
+value="nerf-breach"
+class="input-checkbox"
+         />Nerf Breach</label>
+<label>
+  <input type="checkbox"
+name="change"
+value="remove-odin"
+class="input-checkbox"
+         />Remove Odin</label>
+<label>
+  <input type="checkbox"
+name="change"
+value="add-bots"
+class="input-checkbox"
+         />Add Bots</label>
+<label>
+  <input type="checkbox"
+name="change"
+value="add-kick"
+class="input-checkbox"
+         />Add Kick vote</label>
+  </div>
+  </div>
+<div class="form-group">
+<p>Write about your experience of Valorant:
+<textarea id="comments"
+
+name="comments"
+          placeholder="Write your text here...">
+</textarea>
+  </div>
+<div class="form-group">
+<button id="submit" class="submit"
+        type="submit">Submit
+</button>
+  </div>
+</form>
+  </div>
+</div>
+</html>
